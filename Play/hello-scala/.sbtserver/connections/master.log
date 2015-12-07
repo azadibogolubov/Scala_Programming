@@ -1,0 +1,25 @@
+New log file opened at Sun Dec 06 18:58:53 PST 2015 by 11070@Azadis-MacBook-Pro.local
+Taking next connection to: 50664
+New client attempting to connect on port: 50666-50664
+  Address = /192.168.1.2:50664
+This client on port 50666 has uuid 721bf507-c81f-4061-8440-baa87e626f74 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-721bf507-c81f-4061-8440-baa87e626f74
+Taking next connection to: 50664
+New client attempting to connect on port: 50704-50664
+  Address = /192.168.1.2:50664
+Handshake exception on socket: 50704
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50664
+New client attempting to connect on port: 50705-50664
+  Address = /192.168.1.2:50664
+This client on port 50705 has uuid 415e2548-6fcf-4a06-894d-37920f9ae2b8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-415e2548-6fcf-4a06-894d-37920f9ae2b8
+Taking next connection to: 50664
