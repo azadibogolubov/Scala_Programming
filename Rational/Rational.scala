@@ -21,6 +21,8 @@ class Rational(n: Int, d: Int)
 
 	def / (i: Int): Rational = new Rational(numer, denom * i)
 
+	implicit def intToRational(x: Int) = new Rational(x)
+
 	override def toString = numer + "/" + denom
 	
 	private def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
